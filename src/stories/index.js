@@ -1,12 +1,10 @@
 import Stories from "../Utils/Stories";
-import Test from "./Test";
+import Centred from "../Utils/Centred";
+import Button from "../components/Button";
 import Story from "./Story";
 
 const Sts = new Stories();
 
-Sts.add("Test", Test)
-  .add("Story", Story)
-  .add("Test 2", Test)
-  .add("Story 2", Story);
+Sts.add("Story", Centred(Story)).add("Button", Centred(Button));
 
 export default Sts;
