@@ -1,0 +1,13 @@
+@import "node_modules/react-fuzzy-picker/styles/fuzzy-picker";
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.centred {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-flow: nowrap;
+}

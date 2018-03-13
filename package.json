@@ -1,0 +1,23 @@
+{
+  "name": "parcel-storybook",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development parcel src/index.html"
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-fuzzy-picker": "^0.6.0",
+    "react-router-dom": "^4.2.2"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "cross-env": "^5.1.3",
+    "node-sass": "^4.7.2",
+    "parcel-bundler": "^1.6.2"
+  }
+}
