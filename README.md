@@ -38,13 +38,12 @@ Add your story in the index page `/src/stories/index.js` like the following :
 
 ```jsx
 import Stories from "../Utils/Stories";
-import Centred from "../Utils/Centred";
 import Button from "../components/Button";
 import Story from "./Story";
 
 const Sts = new Stories();
 
-Sts.add("Story", Centred(Story)).add("Button", Centred(Button));
+Sts.add("Story", Story).add("Button", Button);
 
 export default Sts;
 ```
@@ -53,4 +52,4 @@ Now open your browser http://localhost:1234 and start your work
 
 ## Feedback
 
-if you use this starter and in your opinion it helpful to create a npm package for it. let's me know - A simple star is enough ⚡️.
+if you are using this starter and in your opinion it helpful to create a npm package for it. let's me know - A simple star is enough - ⚡️.
