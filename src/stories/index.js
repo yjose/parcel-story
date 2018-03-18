@@ -5,6 +5,7 @@ import Story from "./Story";
 
 const Sts = new Stories();
 
-Sts.add("Story", Centred(Story)).add("Button", Centred(Button));
+Sts.add("Story", Centred(Story))
+   .add("Button", Centred(Button));
 
 export default Sts;
