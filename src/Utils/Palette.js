@@ -3,7 +3,7 @@ import React from "react";
 import { withRouter } from "react-router";
 
 import { FuzzyPicker, FuzzyWrapper } from "react-fuzzy-picker";
-import Components from "./stories"; //   const Sts = Object.entries(require("./stories/*.js"));
+import Components from "../stories"; //   const Sts = Object.entries(require("./stories/*.js"));
 const Palette = props => (
   <FuzzyWrapper
     isKeyPressed={e => {
