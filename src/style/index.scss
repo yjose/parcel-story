@@ -1,7 +1,16 @@
 @import "node_modules/react-fuzzy-picker/styles/fuzzy-picker";
+
 body {
   margin: 0;
   padding: 0;
+}
+.main {
+  margin: 0;
+  padding: 0;
+}
+.content {
+  display: flex;
+  flex-direction: row;
 }
 
 .centred {
@@ -11,4 +20,22 @@ body {
   min-height: 100vh;
   flex-flow: nowrap;
 }
-
+.props-editor {
+  width: 300px;
+  height: 100%;
+  .CodeMirror {
+    height: auto;
+  }
+}
+.json-valid {
+  width: 300px;
+  text-align: center;
+  font-size: 18px;
+  background: gray;
+  &.valid {
+    color: aqua;
+  }
+  &.invalid {
+    color: red;
+  }
+}

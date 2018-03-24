@@ -1,3 +1,3 @@
 import React from "react";
 
-export default () => <button>Buttontest</button>;
+export default ({ style, name }) => <button style={style}>{name}</button>;
