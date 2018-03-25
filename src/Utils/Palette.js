@@ -3,7 +3,8 @@ import React from "react";
 import { withRouter } from "react-router";
 
 import { FuzzyPicker, FuzzyWrapper } from "react-fuzzy-picker";
-import Components from "../stories"; //   const Sts = Object.entries(require("./stories/*.js"));
+import Stories from "../stories"; //   const Sts = Object.entries(require("./stories/*.js"));
+
 const Palette = props => (
   <FuzzyWrapper
     isKeyPressed={e => {
@@ -20,12 +21,12 @@ const FuzzySearchExample = props => (
   <FuzzyPicker
     {...props}
     onChange={choice => {
-      props.history.push(`/${choice.storyName}`);
+      props.history.push(`/${choice.name}`);
       props.onClose();
     }}
-    items={Components.list}
-    itemValue={item => item.storyName}
-    renderItem={item => <span className="item-wrapper">{item.storyName}</span>}
+    items={Stories}
+    itemValue={item => item.name}
+    renderItem={item => <span className="item-wrapper">{item.name}</span>}
   />
 );
 

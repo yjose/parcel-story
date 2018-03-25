@@ -1,28 +1,24 @@
-import Stories from "../Utils/Stories";
-import Centred from "../Utils/Centred";
-import WithProp from "../Utils/WithProp";
+import React from "react";
 import Button from "../components/Button";
 import Story from "./Story";
+import Centred from "../Utils/Centred";
 
-import "codemirror/lib/codemirror.css";
-import "codemirror/theme/material.css";
-
-const Sts = new Stories();
-
-const storyProps = { text: "youssef Here" };
+const storyProps = { text: "Parcel Storybook" };
 const buttonProps = {
   name: "My Button",
   style: {
     margin: "10px",
-    height: "40px",
-    color: "red",
+    height: "30px",
+    color: "black",
     background: "blue"
   }
 };
 
-Sts.add("Story", WithProp(Story)(storyProps)).add(
-  "Button",
-  WithProp(Button)(buttonProps)
-);
-
-export default Sts;
+export default [
+  { name: "Story", component: Centred(Story), props: storyProps },
+  { name: "Button", component: Centred(Button), props: buttonProps },
+  {
+    name: "without Prop",
+    component: Centred(() => <button>Test without props</button>)
+  }
+];
