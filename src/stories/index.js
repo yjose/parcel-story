@@ -15,10 +15,18 @@ const buttonProps = {
 };
 
 export default [
-  { name: "Story", component: Centred(Story), props: storyProps },
-  { name: "Button", component: Centred(Button), props: buttonProps },
   {
-    name: "without Prop",
+    name: "Story",
+    component: Centred(Story),
+    props: storyProps // adding props
+  },
+  {
+    name: "Button",
+    component: Centred(Button),
+    props: buttonProps
+  },
+  {
+    name: "without Prop", // without props
     component: Centred(() => <button>Test without props</button>)
   }
 ];
