@@ -7,10 +7,11 @@ Develop your components with parcel - A simple Alternative to storybook Using pa
 * parceljs that's mean super fast 🚀
 * Full customization 👌
 * `Ctrl+p` Everywhere.
+* play with props
 
 ## Parcel-Storybook in action
 
-![alt text](https://raw.githubusercontent.com/yjose/parcel-storybook/master/src/style/demo.gif)
+![alt text](https://raw.githubusercontent.com/yjose/parcel-storybook/master/src/style/demo-props.gif)
 
 ## Getting Started
 
@@ -34,18 +35,41 @@ export default () => (
 );
 ```
 
-Add your story in the index page `/src/stories/index.js` like the following :
+Add your story in the index page `/src/stories/index.js` and export your stories as array like the following :
 
 ```jsx
-import Stories from "../Utils/Stories";
+import React from "react";
 import Button from "../components/Button";
 import Story from "./Story";
+import Centred from "../Utils/Centred";
 
-const Sts = new Stories();
+const storyProps = { text: "Parcel Storybook" };
+const buttonProps = {
+  name: "My Button",
+  style: {
+    margin: "10px",
+    height: "30px",
+    color: "black",
+    background: "blue"
+  }
+};
 
-Sts.add("Story", Story).add("Button", Button);
-
-export default Sts;
+export default [
+  {
+    name: "Story",
+    component: Centred(Story),
+    props: storyProps // adding props
+  },
+  {
+    name: "Button",
+    component: Centred(Button),
+    props: buttonProps
+  },
+  {
+    name: "without Prop", // without props
+    component: Centred(() => <button>Test without props</button>)
+  }
+];
 ```
 
 Now open your browser http://localhost:1234 and start your work
