@@ -7,7 +7,7 @@ Develop your components with parcel - A simple Alternative to storybook Using pa
 * parceljs that's mean super fast 🚀
 * Full customization 👌
 * `Ctrl+p` Everywhere.
-* play with props
+* Play with props
 
 ## Parcel-Storybook in action
 
