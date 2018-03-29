@@ -21,21 +21,48 @@ body {
   flex-flow: nowrap;
 }
 .props-editor {
+  position: sticky;
+  top: 0;
+  left: 0;
   width: 300px;
   height: 100%;
   .CodeMirror {
-    height: auto;
+    height: calc(100% - 10px);
   }
 }
 .json-valid {
   width: 300px;
-  text-align: center;
-  font-size: 18px;
+  height: 10px;
   background: gray;
+  display: flex;
+  flex-direction: row;
+  span {
+    display: block;
+    width: 0%;
+    height: 10px;
+    transition: width 100ms;
+  }
+  .s-valid {
+    background: #4ef74e;
+  }
+  .s-invalid {
+    background: #e80707;
+  }
+
   &.valid {
-    color: aqua;
+    .s-valid {
+      width: 100%;
+    }
+    .s-invalid {
+      width: 0%;
+    }
   }
   &.invalid {
-    color: red;
+    .s-valid {
+      width: 0%;
+    }
+    .s-invalid {
+      width: 100%;
+    }
   }
 }

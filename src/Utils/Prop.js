@@ -43,9 +43,8 @@ class Prop extends React.Component {
     const { valid, value, validData } = this.state;
     return (
       <div className="props-editor">
-        <div className={`json-valid ${valid ? " valid " : " invalid "}`}>
-          {" "}
-          {valid ? "Valid " : "Non valid"}
+        <div className={`json-valid ${valid ? "valid" : "invalid"}`}>
+          <span className="s-valid" /> <span className="s-invalid" />
         </div>
         <CodeMirror
           value={value}
@@ -62,9 +61,3 @@ export default Prop;
 
 const fromJson = json => JSON.parse(json);
 const toJson = val => JSON.stringify(val, null, 2);
-
-const jsonExemple = {
-  text: "test props",
-  visible: true,
-  array: ["test1", "test2"]
-};
