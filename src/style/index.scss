@@ -1,4 +1,4 @@
-@import "node_modules/react-fuzzy-picker/styles/fuzzy-picker";
+@import "./fuzzy-picker/index.scss";
 
 body {
   margin: 0;
@@ -46,7 +46,7 @@ body {
     background: #4ef74e;
   }
   .s-invalid {
-    background: #e80707;
+    background: #b33a3a;
   }
 
   &.valid {
