@@ -20,16 +20,6 @@ export default [
     component: Centred(Story),
     props: storyProps // adding props
   },
-  {
-    name: "Story 2",
-    component: Centred(Story),
-    props: storyProps // adding props
-  },
-  {
-    name: "Story 3",
-    component: Centred(Story),
-    props: storyProps // adding props
-  },
 
   {
     name: "Button",
