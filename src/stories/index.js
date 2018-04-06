@@ -16,10 +16,21 @@ const buttonProps = {
 
 export default [
   {
-    name: "Story",
+    name: "Story 1",
     component: Centred(Story),
     props: storyProps // adding props
   },
+  {
+    name: "Story 2",
+    component: Centred(Story),
+    props: storyProps // adding props
+  },
+  {
+    name: "Story 3",
+    component: Centred(Story),
+    props: storyProps // adding props
+  },
+
   {
     name: "Button",
     component: Centred(Button),
