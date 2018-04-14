@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../components/Button";
 import Story from "./Story";
-import Centred from "../Utils/Centred";
+import { Centred } from "story-router";
 
 const storyProps = { text: "Parcel Storybook" };
 const buttonProps = {
