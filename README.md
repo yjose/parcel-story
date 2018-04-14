@@ -11,7 +11,7 @@ Develop your components with parcel - A simple Alternative to storybook Using pa
 
 ## Parcel-Storybook in action
 
-![alt text](https://raw.githubusercontent.com/yjose/parcel-storybook/master/src/style/demo-props.gif)
+![alt text](https://raw.githubusercontent.com/yjose/parcel-storybook/master/src/demo.gif)
 
 ## Getting Started
 
