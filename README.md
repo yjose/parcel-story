@@ -19,6 +19,7 @@ Clone parcel-storybook repository and install npm dependencies && start parcel d
 
 ```
 git clone https://github.com/yjose/parcel-storybook.git
+cd parcel-storybook
 yarn install
 yarn start
 ```
